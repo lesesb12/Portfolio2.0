@@ -1,9 +1,16 @@
 export default [{
+    name: "home",
     path: "/",
-    component: require('./src/components/Home.vue')
+    component: require('../components/Home.vue').default
   },
   {
-    path: "/app",
-    component: require('./src/components/App.vue')
+    name: "blog",
+    path: "/blog",
+    component: require('../components/Blog.vue').default
+  },
+  {
+    name: "test",
+    path: "/test",
+    component: require('../components/Test.vue').default
   }
 ]

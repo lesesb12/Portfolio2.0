@@ -1,3 +1,4 @@
+'use strict'
 var path = require('path')
 var webpack = require('webpack')
 const ExtractTextPlugin = require("extract-text-webpack-plugin")
@@ -13,6 +14,7 @@ module.exports = {
     rules: [{
         test: /\.vue$/,
         loader: 'vue-loader',
+        //use: 'vue-loader',
         options: {
           loaders: {
             // Since sass-loader (weirdly) has SCSS as its default parse mode, we map

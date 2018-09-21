@@ -1,0 +1,67 @@
+{
+  "sam": [{
+      "graph1": {
+        "link": 13,
+        "tags": 10
+      }
+    },
+    {
+      "graph1": {
+        "link": 13,
+        "tags": 10
+      }
+    }
+  ],
+  "sports": [{
+      "graph1": {
+        "link": 13,
+        "tags": 10
+      }
+    },
+    {
+      "graph1": {
+        "link": 13,
+        "tags": 10
+      }
+    }
+  ],
+  "weather": [{
+      "graph1": {
+        "link": 13,
+        "tags": 10
+      }
+    },
+    {
+      "graph1": {
+        "link": 13,
+        "tags": 10
+      }
+    }
+  ],
+  "travel": [{
+      "graph1": {
+        "link": 13,
+        "tags": 10
+      }
+    },
+    {
+      "graph1": {
+        "link": 13,
+        "tags": 10
+      }
+    }
+  ],
+  "politics": [{
+      "graph1": {
+        "link": 13,
+        "tags": 10
+      }
+    },
+    {
+      "graph1": {
+        "link": 13,
+        "tags": 10
+      }
+    }
+  ]
+}
