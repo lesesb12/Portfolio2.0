@@ -30,6 +30,11 @@
         </iframe>
       </b-col>
     </b-row>
+    <!--<b-row>
+      <p>
+        Made by VueJS, ES6, and hosted on Heroku
+      </p>
+    </b-row>-->
     <hr>
   </div>
 </template>
