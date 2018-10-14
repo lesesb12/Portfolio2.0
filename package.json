@@ -4,12 +4,15 @@
   "version": "1.0.0",
   "author": "Sam <samuel.lesem@gmail.com>",
   "private": true,
+  "engines": {
+    "node": "8.9.4"
+  },
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "start": "node server.js",
     "heroku-postbuild": "npm install --only=dev --no-shrinkwrap && npm run build",
-    "build": "node build/build.js",
-    "build1": "webpack --config webpack.config.js",
+    "build1": "node dist/build.js",
+    "build": "webpack --config webpack.config.js",
     "build2": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {
