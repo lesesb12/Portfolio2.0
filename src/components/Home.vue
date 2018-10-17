@@ -45,6 +45,11 @@ export default {
   data() {
     return {};
   },
+  // computed: {
+  //   background() {
+  //     return require("./src/assets/IMG_6193.png");
+  //   }
+  // },
   components: {}
 };
 </script>

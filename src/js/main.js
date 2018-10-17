@@ -35,8 +35,8 @@ Vue.use(BootstrapVue)
 import routes from "./routes.js";
 
 const router = new VueRouter({
-  routes,
-  mode: 'history'
+  mode: 'history',
+  routes
 });
 
 new Vue({
