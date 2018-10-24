@@ -7,7 +7,7 @@ module.exports = {
   entry: './src/js/main.js',
   output: {
     path: path.resolve(__dirname, './dist'),
-    publicPath: '/dist/',
+    publicPath: '/',
     filename: 'build.js'
   },
   module: {
@@ -44,6 +44,16 @@ module.exports = {
         options: {
           name: '[name].[ext]?[hash]'
         }
+      },
+      {
+        test: /\.(png|jpg|gif)$/i,
+        use: [{
+          loader: 'url-loader',
+          options: {
+            limit: 8192,
+            mimetype: 'image/png'
+          }
+        }]
       }
     ]
   },

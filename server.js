@@ -1,12 +1,11 @@
 const express = require('express');
 const path = require('path');
-const serveStatic = require('serve-static');
+//const serveStatic = require('serve-static');
 
 
 let app = express();
+app.use('/media', express.static(__dirname + '/media'));
 app.use('/dist', express.static(__dirname + '/dist'));
-//app.use(express.static(__dirname + '/src'));
-//app.use(serveStatic(__dirname + "/dist"));
 
 const port = process.env.PORT || 5000;
 

@@ -11,7 +11,7 @@
     </b-row>
     <b-row id="row-2">
       <b-col>
-        <b-img src="./src/assets/IMG_6193.png" center rounded="circle" width="576px" height="384px" class="m-1" />
+        <b-img src="media/IMG_6193.png" center rounded="circle" width="576px" height="384px" class="m-1" />
       </b-col>
       <b-col>
         <h6> Who are you? </h6>
@@ -47,7 +47,7 @@ export default {
   },
   // computed: {
   //   background() {
-  //     return require("./src/assets/IMG_6193.png");
+  //     return require("../assets/IMG_6193.png");
   //   }
   // },
   components: {}
