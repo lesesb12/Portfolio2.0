@@ -1,11 +1,13 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import BootstrapVue from "bootstrap-vue"
+import BootstrapVue from 'bootstrap-vue'
+import Bootstrap from 'bootstrap'
 import PageContainer from '../components/PageContainer.vue'
 import Home from '../components/Home.vue'
-import Blog from "../components/Blog.vue"
-import "bootstrap/dist/css/bootstrap.min.css"
-import "bootstrap-vue/dist/bootstrap-vue.css"
+import Blog from '../components/Blog.vue'
+import Test from '../components/Test.vue'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
 import {
   library
 } from '@fortawesome/fontawesome-svg-core'
@@ -31,8 +33,9 @@ Vue.config.productionTip = false
 
 Vue.use(VueRouter);
 Vue.use(BootstrapVue)
+//Vue.use(Bootstrap);
 
-import routes from "./routes.js";
+import routes from './routes.js';
 
 const router = new VueRouter({
   mode: 'history',
@@ -45,7 +48,8 @@ new Vue({
   components: {
     PageContainer,
     Home,
-    Blog
+    Blog,
+    Test
   },
   template: '<PageContainer/>',
   render: h => h(PageContainer)

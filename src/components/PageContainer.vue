@@ -1,5 +1,5 @@
 <template>
-  <b-container fluid id="home">
+  <div class="container-fluid" id="home">
     <b-nav class="navbar fixed-top navbar-dark bg-dark">
       <b-navbar-nav class="mr-2 ml-2">
         <b-nav-item router-link :to="{ name: 'home' }">
@@ -28,7 +28,7 @@
       </b-navbar-nav>
     </b-nav>
     <router-view></router-view>
-  </b-container>
+  </div>
 
 </template>
 
