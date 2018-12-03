@@ -1,24 +1,21 @@
 <template>
   <div>
-    <b-row class="justify-content-sm-center">
-      <b-col cols="2" id="sidenav">
+    <b-row class="justify-content-center">
+      <!-- <b-col cols="2" id="sidenav">
         <a href="#">About</a>
         <a href="#">Services</a>
         <a href="#">Clients</a>
         <a href="#">Contact</a>
-      </b-col>
-      <b-col cols="10" id="content">
-        <b-row class="text-center justify-content-sm-center">
+      </b-col> -->
+      <b-col cols="12" id="content">
+        <b-row class="text-center justify-content-center">
           <b-col cols="12" md="auto">
-            <h1>Data Visualizations by Me, myself, and all my millions</h1>
+            <h1>Data Visualizations</h1>
           </b-col>
         </b-row>
-        <b-row class="text-center justify-content-sm-center">
+        <b-row class="text-center justify-content-center">
           <div id="map">
           </div>
-          <b-col cols="12">
-
-          </b-col>
         </b-row>
       </b-col>
     </b-row>
@@ -27,6 +24,7 @@
 
 <script>
 import mapboxgl from "mapbox-gl";
+let chicagorl = require("../js/mapbox/chicagoredlights.js");
 
 export default {
   name: "Blog",
@@ -43,6 +41,7 @@ export default {
         center: [-87.6244, 41.8756],
         zoom: 9
       });
+
       map.addControl(new mapboxgl.NavigationControl());
 
       map.on("load", function() {
@@ -58,15 +57,15 @@ export default {
             "circle-radius": [
               "interpolate",
               ["linear"],
-              ["to-number", ["get", "violations"]],
-              1,
-              3,
+              ["zoom"],
               2,
-              8,
-              2.5,
-              15
+              ["*", 0.25, ["to-number", ["get", "violations"]]],
+              5,
+              ["*", 1 / 3, ["to-number", ["get", "violations"]]],
+              10,
+              ["*", 0.5, ["to-number", ["get", "violations"]]]
             ],
-            "circle-opacity": 0.8
+            "circle-opacity": 0.5
           }
         });
       });
@@ -100,7 +99,6 @@ a {
 
 #content {
   margin-top: 50px;
-  border-left: thick solid black;
 }
 
 #map {

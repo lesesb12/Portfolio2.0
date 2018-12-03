@@ -1,6 +1,9 @@
 const express = require('express');
 const path = require('path');
+const MongoClient = require('mongodb').MongoClient;
+const assert = require('assert');
 //const serveStatic = require('serve-static');
+const url = 'mongodb://localhost:27017';
 
 
 let app = express();

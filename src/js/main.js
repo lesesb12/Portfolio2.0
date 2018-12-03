@@ -31,11 +31,13 @@ Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 Vue.config.productionTip = false
 
-Vue.use(VueRouter);
-Vue.use(BootstrapVue)
+
 //Vue.use(Bootstrap);
 
 import routes from './routes.js';
+
+Vue.use(VueRouter);
+Vue.use(BootstrapVue)
 
 const router = new VueRouter({
   mode: 'history',
