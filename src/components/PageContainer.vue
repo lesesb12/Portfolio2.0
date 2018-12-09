@@ -22,7 +22,7 @@
         </b-nav-item>
       </b-navbar-nav>
       <b-navbar-nav class="mr-2">
-        <b-nav-item href="#">
+        <b-nav-item href="mailto:samuel.lesem@gmail.com?Subject=Let's connect!">
           <font-awesome-icon :icon="['fas', 'envelope']" size="2x" />
         </b-nav-item>
       </b-navbar-nav>

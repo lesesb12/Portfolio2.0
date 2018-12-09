@@ -2,7 +2,6 @@
   <div>
     <b-row id="row-1">
       <b-col cols="12" id="r1c1">
-        <hr>
         <header>
           <h1>Sam Lesem</h1>
           <h3>Software Engineer, Data Consumer, Netflix Enthusiast</h3>
@@ -10,8 +9,8 @@
       </b-col>
     </b-row>
     <b-row id="row-2">
-      <b-col cols="12" md="6">
-        <b-img src="./media/IMG_6193.png" width="576px" height="384px" class="img-fluid rounded profpic" />
+      <b-col cols="12" md="6" class="my-image">
+        <b-img src="./media/IMG_6193.png" width="576px" height="384px" class="img-fluid profpic" />
       </b-col>
       <b-col cols="12" md="6">
         <h6> Who are you? </h6>
@@ -68,7 +67,7 @@ export default {
 }
 
 header {
-  margin-top: 100px;
+  margin-top: 200px;
   margin-bottom: 100px;
 }
 
@@ -80,23 +79,33 @@ hr {
 }
 
 #row-2 {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 35px;
+  margin-bottom: 35px;
   font-family: "Cardo", sans-serif;
 }
-
+.my-image {
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-bottom: 35px;
+}
 .profpic {
   max-width: 100%;
   height: auto;
+  border-radius: 25px;
+  margin: auto;
 }
 
 h6 {
   font-weight: bold;
   font-size: 16pt;
 }
-#r3c1 {
-  margin-top: 100px;
+
+#row-3 {
+  margin-top: 25px;
   margin-bottom: 50px;
+}
+#r3c1 {
   border-color: #77c9d4;
 }
 
