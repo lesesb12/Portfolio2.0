@@ -7,11 +7,11 @@ const url = 'mongodb://localhost:27017';
 
 let app = express();
 
-
 app.use('/media', express.static(__dirname + '/media'));
 app.use('/dist', express.static(__dirname + '/dist'));
 app.use(history({
-  verbose: true
+  index: '/'
+  //verbose: true
 }));
 
 const port = process.env.PORT || 5000;
