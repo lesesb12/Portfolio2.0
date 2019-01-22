@@ -2,13 +2,17 @@ const express = require('express');
 const path = require('path');
 const MongoClient = require('mongodb').MongoClient;
 const assert = require('assert');
-//const serveStatic = require('serve-static');
+const history = require('connect-history-api-fallback');
 const url = 'mongodb://localhost:27017';
 
-
 let app = express();
+
+
 app.use('/media', express.static(__dirname + '/media'));
 app.use('/dist', express.static(__dirname + '/dist'));
+app.use(history({
+  verbose: true
+}));
 
 const port = process.env.PORT || 5000;
 
