@@ -58,8 +58,6 @@ a {
 #content {
   margin-top: 50px;
 }
-.rl-header {
-}
 
 #map {
   margin: auto;
