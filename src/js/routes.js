@@ -1,6 +1,10 @@
 export default [{
+    path: "*",
+    redirect: "/home"
+  },
+  {
     name: "home",
-    path: "/",
+    path: "/home",
     component: require('../components/Home.vue').default
   },
   {
