@@ -7,7 +7,7 @@
         </b-nav-item>
       </b-navbar-nav>
       <b-navbar-nav class="mr-2">
-        <b-nav-item router-link :to="{ path: '/blog' }">
+        <b-nav-item router-link :to="{ path: 'blog' }">
           Blog
         </b-nav-item>
       </b-navbar-nav>
