@@ -58,7 +58,7 @@
 
     <b-row>
       <b-col class="text-center download-resume">
-        <a href="./media/SamLesemResume.pdf" download="SamLesemResume">
+        <a href="./media/SamLesemResumeWebsite.pdf" download="SamLesemResume">
           Download Resume
         </a>
       </b-col>
