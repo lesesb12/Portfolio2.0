@@ -24,7 +24,7 @@
       </b-col>
     </b-row>
     <b-row>
-      <b-col cols="12" class="text-left my-experience">
+      <b-col cols="12" class="text-left my-experience p-0">
         <h6 class="text-center my-experience-header"> My Experience...</h6>
         <b-col>
           <p>
@@ -48,9 +48,9 @@
           <p>
             <strong>
               Software Quality Assurance Intern,
-              <a href="https://www.wigwag.io/" target="_blank">WigWag Inc (acquired by ARM)</a>,
+              <a href="https://www.wigwag.io/" target="_blank">WigWag Inc (acquired by Arm)</a>,
             </strong>
-            Summer 2016, Austin, Tx
+            Summer 2016, Austin, TX
           </p>
         </b-col>
       </b-col>
@@ -58,7 +58,7 @@
 
     <b-row>
       <b-col class="text-center download-resume">
-        <a href="#" download>
+        <a href="./media/SamLesemResume.pdf" download="SamLesemResume">
           Download Resume
         </a>
       </b-col>
@@ -73,7 +73,7 @@
     <b-row class="text-center">
       <b-col cols="12">
         <p>
-          Made with VueJS, ES6, and hosted on Heroku
+          Made with VueJS, ES6, ExpressJS, and hosted on Heroku
         </p>
       </b-col>
     </b-row>
