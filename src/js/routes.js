@@ -11,10 +11,5 @@ export default [{
     name: "blog",
     path: "/blog",
     component: require('../components/Blog.vue').default
-  },
-  {
-    name: "test",
-    path: "/test",
-    component: require('../components/Test.vue').default
   }
 ]

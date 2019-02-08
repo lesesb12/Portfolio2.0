@@ -2,11 +2,10 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import BootstrapVue from 'bootstrap-vue'
 import Bootstrap from 'bootstrap'
-//import chicagorl from '/js/mapbox/chicagoredlights.js'
 import PageContainer from '../components/PageContainer.vue'
 import Home from '../components/Home.vue'
 import Blog from '../components/Blog.vue'
-import Test from '../components/Test.vue'
+
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import {
@@ -51,8 +50,7 @@ new Vue({
   components: {
     PageContainer,
     Home,
-    Blog,
-    Test
+    Blog
   },
   template: '<PageContainer/>',
   render: h => h(PageContainer)
