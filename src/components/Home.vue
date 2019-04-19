@@ -88,6 +88,8 @@ export default {
     return {};
   },
   components: {}
+
+  // name, email, comment box
 };
 </script>
 

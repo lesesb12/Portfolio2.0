@@ -1,21 +1,16 @@
 import mapboxgl from "mapbox-gl";
 
-let chicago_key = "";
+let chicago_key = `?$$app_token=${process.env.CHICAGO_API}`;
 let currentdate = new Date();
 
 let today = "&violation_date=" + currentdate.getFullYear() + "-" +
   (currentdate.getMonth() + 1) + "-" +
   currentdate.getDate() - 14 + "T00:00:00.0000";
 
-if (process.env.CHICAGO_API) {
-  chicago_key = `?$$app_token=${process.env.CHICAGO_API}`;
-}
-
 export default ({
 
   mapbox: function () {
-    mapboxgl.accessToken =
-      "pk.eyJ1Ijoic2xlc2VtIiwiYSI6ImNqM2xzZnpobjAweTkzM215dTIxMXpia2gifQ.0u7LU9cCdGoIGQH829c44A";
+    mapboxgl.accessToken = process.env.MAPBOX_KEY;
     var map = new mapboxgl.Map({
       container: "map",
       style: "mapbox://styles/mapbox/streets-v10",
