@@ -1,7 +1,7 @@
 'use strict'
 const path = require('path')
 const webpack = require('webpack')
-const Dotenv = require('dotenv-webpack');
+//const Dotenv = require('dotenv-webpack');
 const ExtractTextPlugin = require("extract-text-webpack-plugin")
 
 module.exports = {
@@ -71,8 +71,8 @@ module.exports = {
     hints: false
   },
   plugins: [
-    new ExtractTextPlugin("main.css"),
-    new Dotenv()
+    new ExtractTextPlugin("main.css")
+    //new Dotenv()
   ],
   devtool: '#eval-source-map'
 }
