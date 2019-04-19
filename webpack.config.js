@@ -83,7 +83,8 @@ if (process.env.NODE_ENV === 'production') {
     new webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: '"production"',
-        MAPBOX_KEY: process.env.MAPBOX_KEY
+        MAPBOX_KEY: process.env.MAPBOX_KEY,
+        CHICAGO_API: process.env.CHICAGO_API
       }
     }),
     new webpack.optimize.UglifyJsPlugin({

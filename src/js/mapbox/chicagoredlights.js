@@ -11,7 +11,6 @@ let today = "&violation_date=" + currentdate.getFullYear() + "-" +
 export default ({
 
   mapbox: function () {
-    console.log(` key ${mapbox_key}`)
     mapboxgl.accessToken = mapbox_key;
     var map = new mapboxgl.Map({
       container: "map",
