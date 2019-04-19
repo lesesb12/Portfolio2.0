@@ -1,7 +1,7 @@
 import mapboxgl from "mapbox-gl";
 
 const mapbox_key = process.env.MAPBOX_KEY;
-const chicago_key = "?$$app_token=" + process.env.CHICAGO_API;
+const chicago_key = `?$$app_token=${process.env.CHICAGO_API}`;
 let currentdate = new Date();
 
 let today = "&violation_date=" + currentdate.getFullYear() + "-" +
