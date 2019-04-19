@@ -64,12 +64,6 @@
       </b-col>
     </b-row>
 
-    <!-- <b-row class="text-center resume-row">
-      <b-col cols="12" class="resume-col">
-        <iframe class="resume" src="https://drive.google.com/file/d/0B0n91EquXz9qSFZrN1R3aVJyX0k/preview" width="580px" height="480px">
-        </iframe>
-      </b-col>
-    </b-row> -->
     <b-row class="text-center">
       <b-col cols="12">
         <p>
