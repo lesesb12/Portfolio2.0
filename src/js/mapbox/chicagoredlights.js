@@ -1,5 +1,6 @@
 import mapboxgl from "mapbox-gl";
 
+// let mapbox_key = process.env.MAPBOX_KEY || 
 let chicago_key = `?$$app_token=${process.env.CHICAGO_API}`;
 let currentdate = new Date();
 

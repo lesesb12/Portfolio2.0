@@ -71,8 +71,7 @@ module.exports = {
     hints: false
   },
   plugins: [
-    new ExtractTextPlugin("main.css"),
-    new Dotenv()
+    new ExtractTextPlugin("main.css")
   ],
   devtool: '#eval-source-map'
 }
@@ -84,6 +83,28 @@ if (process.env.NODE_ENV === 'production') {
     new webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: '"production"'
+      }
+    }),
+    new webpack.optimize.UglifyJsPlugin({
+      sourceMap: true,
+      compress: {
+        warnings: false
+      }
+    }),
+    new webpack.LoaderOptionsPlugin({
+      minimize: true
+    })
+  ])
+}
+
+if (process.env.NODE_ENV === 'development') {
+  module.exports.devtool = '#source-map'
+  // http://vue-loader.vuejs.org/en/workflow/production.html
+  module.exports.plugins = (module.exports.plugins || []).concat([
+    new Dotenv(),
+    new webpack.DefinePlugin({
+      'process.env': {
+        NODE_ENV: '"development"'
       }
     }),
     new webpack.optimize.UglifyJsPlugin({
