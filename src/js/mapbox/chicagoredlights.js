@@ -1,7 +1,7 @@
 import mapboxgl from "mapbox-gl";
 
-let mapbox_key = process.env.MAPBOX_KEY;
-let chicago_key = `?$$app_token=${process.env.CHICAGO_API}`;
+const mapbox_key = process.env.MAPBOX_KEY;
+const chicago_key = `?$$app_token=${process.env.CHICAGO_API}`;
 let currentdate = new Date();
 
 let today = "&violation_date=" + currentdate.getFullYear() + "-" +
@@ -11,6 +11,7 @@ let today = "&violation_date=" + currentdate.getFullYear() + "-" +
 export default ({
 
   mapbox: function () {
+    console.log(` key ${mapbox_key}`)
     mapboxgl.accessToken = mapbox_key;
     var map = new mapboxgl.Map({
       container: "map",
