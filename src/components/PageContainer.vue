@@ -6,11 +6,11 @@
           Home
         </b-nav-item>
       </b-navbar-nav>
-      <!-- <b-navbar-nav class="mr-2">
+      <b-navbar-nav class="mr-2">
         <b-nav-item router-link :to="{ path: 'blog' }">
           Blog
         </b-nav-item>
-      </b-navbar-nav> -->
+      </b-navbar-nav>
       <b-navbar-nav class="ml-auto mr-2">
         <b-nav-item href="https://www.linkedin.com/in/sam-lesem-a355786a/">
           <font-awesome-icon :icon="['fab', 'linkedin']" size="2x" />
