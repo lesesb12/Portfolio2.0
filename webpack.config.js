@@ -83,7 +83,7 @@ if (process.env.NODE_ENV === 'production') {
     new webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: '"production"',
-        MAPBOX_KEY: JSON.stringify(process.env.MAPBOX_KEY)
+        MAPBOX_KEY: process.env.MAPBOX_KEY
       }
     }),
     new webpack.optimize.UglifyJsPlugin({
